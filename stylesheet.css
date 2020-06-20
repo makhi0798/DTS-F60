@@ -1,1 +1,316 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul  {
+  list-style: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1980px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 200px 0;
+  background-image: url(bg.jpg);
+  height:100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  color: black;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.top-wrapper h2 {
+  font-size: 40px;
+  color: black;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+    width: 60px;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: black;
+  display: block;
+  float: left;
+  font-size: 25px;
+  
+}
+
+.header-right a:hover {
+  color: #CBC5C5;
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 40px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display:none;
+  
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-size:40px;
+}
+
+.lesson {
+  float: left;
+  width: 33%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.deskripsi {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: black;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+/*.about-container {
+  width: 60%;
+  
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px #212121;
+  display: flex;
+  position: relative;
+  padding: 30px;
+  line-height: 40px;
+   align-content: center;
+
+}
+.about {
+  text-align: center;
+}
+.foto {
+  height: 200px;
+
+}
+
+.about-text {
+  margin-left: 70px;
+  
+}
+
+.about-text ul{
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.fa {
+  margin-right:20px;
+}
+
+.about-text button {
+  width: 120px;
+  height: 40px;
+  color:#fff;
+  outline: none;
+  border-radius: 10px;
+  font-family: calibri;
+  background-color: black;
+  margin-top: 10px;
+
+}
+.about-text button:hover {
+  color: black;
+  background-color: white;
+  
+
+}
+.about-text button:active {
+  width: 120px;
+  height: 40px;
+  color:#fff;
+  outline: none;
+  border-radius: 10px;
+  font-family: calibri;
+  background-color: black;
+}*/
+
+
+/* Untuk Tablet */
+@media all and (max-width: 900px) {
+  .lesson {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .facebook {
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper {
+    text-align: left;
+  }
+  
+  /* Tambahkan CSS untuk header-right */
+  .header-right{
+    display:none;
+  }
+  
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon{
+    display:block;
+    color: black
+  }
+  
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+}
